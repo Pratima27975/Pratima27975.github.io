@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="lab45.css">
+<title>Lab4</title>
+</head>
+<body>
+    <div id="first">
+        <h1 id="name"onclick="Name()">PRATIMA RIJAL</h1><br>
+        <h1 id="regno"onclick="Reg_No()">202000543</h1><br>
+    </div>
+    <div id="second">
+        <img onmouseover="largePic(this)" onmouseout="normPic(this)"
+    src="kohli.jpg"width="320px" height="180px">
+    <h1 onmouseover="showUserName()" onmouseout="hideUserName()" id="usernameId">Virat kholi </h1>
+        
+    </div>
+    <div id="third">
+        <h1>pratima_202000543@smit.smu.edu.in</h1>
+    </div>
+    <script>
+        function Name()
+        {
+            alert("Pratima Rijal");
+        }
+        function Reg_No()
+        {
+            alert("Reg No : 202000543");
+        }
+        function largePic(x)
+        {
+            x.style.width="640px";
+            x.style.height="360px";
+        }
+        function normPic(x)
+        {
+            x.style.width="320px";
+            x.style.height="180px";
+        }
+        function showUserName(){
+            const x=document.getElementById("usernameId")
+            x.innerHTML='<h1 class="username"> VIRAT KOHLI </h1>'
+            
+        }
+        function hideUserName(){
+            const x=document.getElementById("usernameId")
+	    
+           x.innerHTML="Virat Kohli";
+        }
+    </script>
+</body>
+</html>
